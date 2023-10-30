@@ -1,0 +1,70 @@
+{
+  "manu@gmail.com": {
+    "Apple": {
+      "groceryname": "Apple",
+      "groceryimage": "Apple.png",
+      "grocerycost": "Rs.200/kg"
+    },
+    "Banana": {
+      "groceryname": "Banana",
+      "groceryimage": "Banana.png",
+      "grocerycost": "Rs.50/kg"
+    },
+    "Orange": {
+      "groceryname": "Orange",
+      "groceryimage": "Orange.png",
+      "grocerycost": "Rs.150/kg"
+    },
+    "Potato": {
+      "groceryname": "Potato",
+      "groceryimage": "Potato.png",
+      "grocerycost": "Rs.40/kg"
+    }
+  },
+  "priyanka@gmail.com": {
+    "Mango": {
+      "groceryname": "Mango",
+      "groceryimage": "Mango.png",
+      "grocerycost": "Rs.80/kg"
+    },
+    "Orange": {
+      "groceryname": "Orange",
+      "groceryimage": "Orange.png",
+      "grocerycost": "Rs.150/kg"
+    },
+    "Curd": {
+      "groceryname": "Curd",
+      "groceryimage": "Curd.png",
+      "grocerycost": "Rs.20/pack"
+    }
+  },
+  "karthi2001@gmail.com": {
+    "Orange": {
+      "groceryname": "Orange",
+      "groceryimage": "Orange.png",
+      "grocerycost": "Rs.150/kg"
+    },
+    "Banana": {
+      "groceryname": "Banana",
+      "groceryimage": "Banana.png",
+      "grocerycost": "Rs.50/kg"
+    },
+    "Curd": {
+      "groceryname": "Curd",
+      "groceryimage": "Curd.png",
+      "grocerycost": "Rs.20/pack"
+    },
+    "Apple": {
+      "groceryname": "Apple",
+      "groceryimage": "Apple.png",
+      "grocerycost": "Rs.200/kg"
+    }
+  },
+  "kavin@hotmail.com": {
+    "Banana": {
+      "groceryname": "Banana",
+      "groceryimage": "Banana.png",
+      "grocerycost": "Rs.50/kg"
+    }
+  }
+}

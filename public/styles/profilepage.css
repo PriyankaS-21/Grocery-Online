@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Lexend Deca';
+    background-image: url("/assets/bg1.jfif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+.app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.app .topSection{
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.topSection .logoImage{
+    width: 10%;
+}
+.logoImage > img{
+    width: 150px;
+    height: 160px;
+    margin-top: -55px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.topSection .topLeftSection{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topLeftSection .viewCartBtn{
+    margin-top: 6px; 
+    width: 127px;
+    height: 43px;
+    font-size: 16px; 
+    background: #F24822;
+    border: 1px solid #F24822;
+    border-radius: 10px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.topLeftSection .viewCartBtn:hover{
+    background: #e9b85d;
+    border: 1px solid #F24822;
+
+}
+
+.topLeftSection .profileButton{
+    margin-left: 40px;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(48, 163, 48);
+    color: white;
+    border: none;
+    font-size: 20px; 
+    text-align: center; 
+}
+
+.topSection .userName{
+    margin-top: -2px;
+    margin-left: auto;
+    width: 60%;
+    height: 40px;
+    padding: 10px 0px;
+    text-align: center;
+    color: rgb(4, 60, 165);
+    font-family: 'Lexend Deca';
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.options .dropDown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropDown .dropdownContent {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(45deg, #e9b85d,  #F24822, #e9b85d);
+    margin-left: -130px;
+    min-width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropDown .dropbtn {
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+.dropbtn > img{
+    margin-left: 10px;
+    margin-top: -2px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.dropdownContent .contentItems1{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.contentItems1 .text{
+    margin-top: -5px;
+}
+
+.contentItems1:hover{
+    background-color: #e9b85d;
+    border-radius: 10px;
+}
+
+.dropdownContent .contentItems2{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+    cursor: pointer;
+}
+.contentItems2 .text{
+    margin-top: -5px;
+}
+
+.contentItems2:hover{
+    background-color: #e9b85d;
+    border-radius: 10px;
+}
+
+.dropDown:hover .dropdownContent {
+    display: block;
+}
+
+.bottomSection{
+    display: flex;
+    gap: 20px;
+    padding: 0px 50px 50px 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+}
+
+.bottomSection::-webkit-scrollbar{
+    display: none;
+}
+
+.bottomSection .profileSection{
+    padding-bottom: 40px;
+    margin-bottom: auto;
+    width: 550px;
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(45deg, rgb(147, 213, 145),  rgb(48, 163, 48),  rgb(147, 213, 145));
+}
+
+.profileSection .profileHeader{
+    padding: 25px;
+    font-family: 'Frijole';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #4C0D0D;
+}
+
+/* .profileSection .userprofileimage{
+    align-self: center;
+    width: 150px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+} */
+
+
+.profileDropdownContent {
+    display: none;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 220px;
+    background-image: linear-gradient(45deg, #e9b85d,  #F24822, #e9b85d);
+    min-width: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.profileDropdownContent.active{
+    display: block;
+}
+.userprofileimage {
+    align-self: center;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.userprofileimage > img{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.profileImgOption{
+    width: 350px;
+    display: flex;
+
+}
+
+.profileDropdownContent .profilePic1{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profileDropdownContent .profilePic2{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profilePic1:hover{
+    background-color: #e9b85d;
+    border-radius: 10px;
+}
+
+.profilePic2:hover{
+    background-color: #e9b85d;
+    border-radius: 10px;
+}
+
+/* .userprofileimage:hover .profileDropdownContent {
+    display: block;
+} */
+
+
+
+
+.profileSection .profileDetails{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #A3DBDE;
+    margin: 0px 30px 0px 30px;
+    border-radius: 20px;
+}
+
+
+.profileDetails .profileDetailList{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333333;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 20px
+
+}
+
+.profileDetailList .userData{
+    color: #1348ab;
+    font-weight: 500;
+}
+
+.profileDetailList .userDataInput{
+    width: 180px;
+    height: 8px;  
+    font-size: 18px; 
+    background: #bce4e9;
+    border: 2px solid #5780cd;
+    color: #1348ab;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Lexend Deca';
+}
+
+.userDataInput::-webkit-outer-spin-button,
+      .userDataInput::-webkit-inner-spin-button {
+        display: none;
+}
+
+.profileDetailList .userDataInput1{
+    width: 180px;
+    height: auto;
+    font-size: 18px; 
+    background: #bce4e9;
+    border: 2px solid #5780cd;
+    color: #1348ab;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Lexend Deca';
+}
+
+.profileSection .buttonClass{
+    align-self: center;
+}
+
+.buttonClass > button{
+    margin-top: 20px;
+    align-self: center;
+    width: 150px;
+    height: 40px;
+    font-size: 16px; 
+    background: #5780cd;
+    border: 1px solid #5780cd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttonClass > button:hover{
+    background: #87a3db;
+    border: 1px solid #5780cd;
+}
+
+.bottomSection .purchaseHistroySection{
+    padding-bottom: 40px;
+    margin-bottom: auto;
+    width: 550px;
+    height: auto;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, rgb(147, 213, 145),  rgb(48, 163, 48),  rgb(147, 213, 145));
+}
+
+.purchaseHistroySection .purchaseHeader{
+    padding: 25px;
+    font-family: 'Frijole';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #4C0D0D;
+}
+
+.purchaseHistroySection .groceryItemsPurchased{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 45px;
+    gap: 20px;
+}
+
+.groceryItemsPurchased .groceryCards{
+    width: 450px;
+    height: 200px;
+    background-color: #A3DBDE;
+    border-radius: 20px;
+    display: flex;
+    transition: transform 2s;
+}
+
+.groceryItemsPurchased .purchasedata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.purchasedata > h1{
+    font-size: 20px;
+    font-family: 'Lexend Deca';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.purchasedata > button{
+    margin-top: 15px;
+    align-self: center;
+    width: 150px;
+    height: 40px;
+    font-size: 16px; 
+    background: #5780cd;
+    border: 1px solid #5780cd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.purchasedata > button:hover{
+    background: #87a3db;
+    border: 1px solid #5780cd;
+}
+
+.groceryItemsPurchased .groceryCards:hover {
+    box-shadow: 2px 5px 10px #F24822;
+    transform: scale(1.05);
+}
+
+.groceryCards .groceryImage1{
+    padding: 10px;
+    width: 190px;
+    align-content: center;
+}
+
+.groceryCards .groceryImage1 > img{
+    width: 170px;
+}
+
+.groceryCards .groceryItemInfo{
+    padding-left: 50px;
+    padding-right: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.groceryItemInfo .groceryNameCost{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.groceryItemInfo > button{
+    margin-top: 15px;
+    align-self: center;
+    width: 150px;
+    height: 40px;
+    font-size: 16px; 
+    background: #5780cd;
+    border: 1px solid #5780cd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groceryItemInfo > button:hover{
+    background: #87a3db;
+    border: 1px solid #5780cd;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #ea6262;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+

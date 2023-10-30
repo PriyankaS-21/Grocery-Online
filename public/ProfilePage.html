@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Online</title>
+    <link rel="stylesheet" href="./styles/profilepage.css">
+</head>
+<body>
+    <div class="app">
+        <div class="topSection">
+            <div class="logoImage">
+                <img src="./assets/logo.png" onclick="onClickLogo()">
+            </div>
+            <div class="topLeftSection">
+                <button class="viewCartBtn" id="viewCartBtn" onclick="viewcart()">View Cart</button>                <button class="profileButton" id="profileButton">M</button>
+                <div class="userName" id="userName">Priyanka</div>
+                <div class="options">
+                    <div class="dropDown">
+                        <button class="dropbtn"><img src="./assets/optionBar.png" /></button>
+                        <div class="dropdownContent">
+                        <div class="contentItems1">
+                            <div><img src="./assets/profile.png"></div>
+                            <div class="text" onclick="profile()">Profile</div>
+                        </div>
+                        <div class="contentItems2">
+                            <img src="./assets/logout.png">
+                            <div class="text" onclick="logout()">Logout</div>
+                        </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomSection">
+            <div class="profileSection" id="profileSection">
+                <h1 class="profileHeader">Profile Section</h1>
+                <button class="userprofileimage" id="userprofileimage" onclick="profileClickFunc()"><img src="./assets/user.png"></button>
+                <div class="profileDropdownContent" id="profileDropdownContent">
+                    <div class="profileImgOption">
+                        <div><img class="profilePic1" src="./assets/gamer.png" onclick="profileImageChange('gamer')"></div>
+                        <div><img class="profilePic2" src="./assets/woman.png" onclick="profileImageChange('woman')"></div>   
+                    </div>      
+                </div>
+                <div class="profileDetails" id="profileDetails">
+                    <div class="profileDetailList">
+                        <label class="UName">Name</label>
+                        <label class="UEmail">Email</label>
+                        <label class="UPhone">Phone Number</label>
+                        <label class="Uaddress">Address</label>                    
+                    </div>
+                    <div id="editform" class="profileDetailList">
+                        <!-- <label class="userData">Papa</label>
+                        <label class="userData">papa@gmail.com</label>
+                        <label class="userData">9023091843</label>
+                        <label class="userData">No.5, Krishna Nagar, TidelPark</label> -->
+                    </div>
+                </div>
+                <div class="buttonClass" id="buttonClass">
+                    <!-- <button  id="editProfileBtn" onclick="editProfile()">Edit Profile</button> -->
+                </div>
+            </div>
+            <div class="purchaseHistroySection">
+                <h1 class="purchaseHeader">Purchase History</h1>
+                <div class="groceryItemsPurchased" id="groceryItemsPurchased">
+                    <div class="groceryCards">
+                        <div class="groceryImage1">
+                            <img src="./assets/Apple.png">
+                        </div>
+                        <div class="groceryItemInfo">
+                            <div class="groceryNameCost">
+                                <label class="groceryName">Apple</label>
+                                <label class="groceryCost">Rs.200</label>
+                            </div>
+                            <button>Delete Product</button>
+                            <button>Buy Again</button>
+                        </div>
+                    </div>
+                    <div class="groceryCards">
+                        <div class="groceryImage1">
+                            <img src="./assets/Spinach.png">
+                        </div>
+                        <div class="groceryItemInfo">
+                            <div class="groceryNameCost">
+                                <label class="groceryName">Spinach</label>
+                                <label class="groceryCost">Rs.20</label>
+                            </div>
+                            <button>Delete Product</button>
+                            <button>Buy Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="snackbar"></div>
+
+    </div>
+    <script src="./scripts/profilepage.js"></script>
+</body>
+</html>

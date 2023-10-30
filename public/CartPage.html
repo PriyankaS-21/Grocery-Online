@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Online</title>
+    <link rel="stylesheet" href="./styles/cartpage.css">
+</head>
+<body>
+    <div class="app">
+        <div class="topSection">
+            <div class="logoImage" onclick="onClickLogo()">
+                <img src="./assets/logo.png" href="ShoppingPage.html">
+            </div>
+            <div class="topLeftSection">
+                <button class="backBtn" onclick="backpage()">Back</button>
+                <button class="profileButton" id="profileButton">P</button>
+                <div class="options">
+                    <div class="dropDown">
+                        <button class="dropbtn"><img src="./assets/optionBar.png" /></button>
+                        <div class="dropdownContent">
+                          <div class="contentItems1">
+                            <div><img src="./assets/profile.png"></div>
+                            <div class="text" onclick="profile()">Profile</div>
+                          </div>
+                          <div class="contentItems2">
+                            <img src="./assets/logout.png">
+                            <div class="text" onclick="logout()">Logout</div>
+                          </div>          
+                         </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div id="snackbar">logging out</div>
+        <div class="bottomSection">
+            <div class="cartSection">
+                <h1 class="groceryProductName">Products in Cart</h1>
+                <div class="groceryItemsInCart" id="groceryItemsInCart">
+                    <!-- <div class="groceryCards">
+                        <div class="groceryImage1">
+                            <img src="./assets/Apple.png">
+                        </div>
+                        <div class="groceryItemInfo">
+                            <div class="groceryNameCost">
+                                <label class="groceryName">Apple</label>
+                                <label class="groceryCost">Rs.200</label>
+                            </div>
+                            <button>Remove</button>
+                            <button>Buy</button>
+                        </div>
+                    </div>
+                    <div class="groceryCards">
+                        <div class="groceryImage1">
+                            <img src="./assets/Spinach.png">
+                        </div>
+                        <div class="groceryItemInfo">
+                            <div class="groceryNameCost">
+                                <label class="groceryName">Spinach</label>
+                                <label class="groceryCost">Rs.20</label>
+                            </div>
+                            <button>Remove</button>
+                            <button>Buy</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="priceSection">
+                <h1 class="groceryProductName">Products in Cart</h1>
+                <div class="productCostNameList" id="productCostNameList">
+                    <!-- <div class="groceryNameCost">
+                        <label class="groceryName">Apple</label>
+                        <label class="groceryCost">Rs.200</label>
+                    </div>
+                    <div class="groceryNameCost">
+                        <label class="groceryName">Spinach</label>
+                        <label class="groceryCost">Rs.20</label>
+                    </div> -->
+    
+                    <div class="totalSection">
+                        <label class="totalHeader">Total</label>
+                        <label class="totalCost">Rs.220</label>
+                    </div>
+                    <button>Buy All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/cartpage.js"></script>
+</body>
+</html>
