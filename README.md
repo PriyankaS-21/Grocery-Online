@@ -42,8 +42,11 @@ Make sure you have the following installed:
 
 ### Features
 -> Can create new user or login if existing user.
+
 -> Can add,remove, purchase grocery items.
+
 -> Can create a user profile.
+
 -> Can view the purchase history.
 
 ## Project Screenshots
