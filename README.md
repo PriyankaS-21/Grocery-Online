@@ -1,5 +1,5 @@
 
-# Awesome Node.js Grocery We bApp
+# Awesome Grocery Web App using Node.js
 
 A Simple Grocery Application using Node.js, A web-based grocery application that empowers customers to shop for groceries online.
 
